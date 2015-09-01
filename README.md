@@ -4,9 +4,8 @@
 [![Build Status](https://travis-ci.org/jnbt/google-idtoken-verifier.svg?branch=master)](https://travis-ci.org/jnbt/google-idtoken-verifier)
 [![Coverage Status](https://coveralls.io/repos/jnbt/google-idtoken-verifier/badge.svg?branch=master&service=github)](https://coveralls.io/r/jnbt/google-idtoken-verifier?branch=master)
 [![Code Climate](https://codeclimate.com/github/jnbt/google-idtoken-verifier/badges/gpa.svg)](https://codeclimate.com/github/jnbt/google-idtoken-verifier)
-[![Gemnasium](https://img.shields.io/gemnasium/jnbt/google-idtoken-verifier.svg?style=flat)](https://gemnasium.com/jnbt/google-idtoken-verifier)
+[![Dependency Status](https://gemnasium.com/jnbt/google-idtoken-verifier.svg)](https://gemnasium.com/jnbt/google-idtoken-verifier)
 [![Inline docs](https://inch-ci.org/github/jnbt/google-idtoken-verifier.svg?branch=master)](https://inch-ci.org/github/jnbt/google-idtoken-verifier)
-[![Yard Docs](https://img.shields.io/badge/yard-docs-blue.svg?style=flat)](https://www.rubydoc.info/github/jnbt/google-idtoken-verifier/master)
 
 Ruby interface to Google's API to verify ID tokens
 
