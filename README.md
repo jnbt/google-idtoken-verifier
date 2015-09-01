@@ -28,7 +28,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+result = Verifier.verify("an_id_token")
+if result.valid?
+  puts "ID: #{result.data["sub"]}"
+  puts "Audience: #{result.data["aud"]}"
+  # here you should check the 'aud' value against your apps
+else
+  puts "Invalid ID token"
+end
+```
 
 ## Development
 

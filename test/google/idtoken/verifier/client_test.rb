@@ -7,19 +7,19 @@ class ClientTest < Minitest::Test
     stub_api_call_with_body(fixture_content("success.json"))
     result = client.call
     expected = {
-      "iss" => "accounts.google.com",
-      "aud" => "some-id.apps.googleusercontent.com",
-      "sub" => "123456789012345678901",
+      "iss"            => "accounts.google.com",
+      "aud"            => "some-id.apps.googleusercontent.com",
+      "sub"            => "123456789012345678901",
       "email_verified" => "true",
-      "azp" => "some-otherid.apps.googleusercontent.com",
-      "email" => "foo@bar.com",
-      "iat" => "1234567890",
-      "exp" => "0987654321",
-      "name" => "Max Mustermann",
-      "given_name" => "Max",
-      "family_name" => "Mustermann",
-      "alg" => "RS256",
-      "kid" => "some_random_data_from_google"
+      "azp"            => "some-otherid.apps.googleusercontent.com",
+      "email"          => "foo@bar.com",
+      "iat"            => "1234567890",
+      "exp"            => "0987654321",
+      "name"           => "Max Mustermann",
+      "given_name"     => "Max",
+      "family_name"    => "Mustermann",
+      "alg"            => "RS256",
+      "kid"            => "some_random_data_from_google"
     }
     assert_equal expected, result
   end
