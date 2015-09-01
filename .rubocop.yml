@@ -7,3 +7,4 @@ Style/Documentation:
 Metrics/MethodLength:
   Exclude:
     - "test/**/*"
+    - "lib/google/idtoken/verifier/cli/**/*"

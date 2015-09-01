@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "google/idtoken/verifier"
+require "google/idtoken/verifier/cli"
+
+Google::Idtoken::Verifier::CLI::App.start
