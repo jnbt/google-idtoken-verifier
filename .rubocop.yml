@@ -8,3 +8,7 @@ Metrics/MethodLength:
   Exclude:
     - "test/**/*"
     - "lib/google/idtoken/verifier/cli/**/*"
+
+Style/FileName:
+  Exclude:
+    - 'lib/google-idtoken-verifier.rb'
