@@ -11,7 +11,7 @@ class CLICommandsCheckTest < Minitest::Test
     Google::Idtoken::Verifier.stub :verify, stub do
       run_command!
     end
-    assert_out "INVALID ID token!", "", "Data:", token: "an_id_token"
+    assert_out "INVALID ID token!", "", "Data:", "{:token=>\"an_id_token\"}"
   end
 
   private

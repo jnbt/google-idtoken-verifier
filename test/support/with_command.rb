@@ -23,11 +23,11 @@ module WithCommand
     end
 
     def print(text = "")
-      lines << text
+      lines << text.to_s
     end
 
     def pretty(object)
-      lines << object
+      lines << object.to_s
     end
   end
 end
