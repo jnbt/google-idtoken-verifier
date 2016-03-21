@@ -40,6 +40,16 @@ class ClientTest < Minitest::Test
     end
   end
 
+  def test_connect_to_real_api_but_fails
+    real do
+      result = client.call
+      expected = {
+        "error_description" => "Invalid Value"
+      }
+      assert_equal expected, result
+    end
+  end
+
   private
 
   def stub_api_call_with_body(body)
@@ -58,5 +68,12 @@ class ClientTest < Minitest::Test
 
   def id_token
     "any_id_token"
+  end
+
+  def real
+    WebMock.allow_net_connect!
+    yield
+  ensure
+    WebMock.disable_net_connect!
   end
 end
