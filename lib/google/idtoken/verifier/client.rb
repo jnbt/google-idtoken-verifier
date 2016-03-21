@@ -6,7 +6,8 @@ module Google
       # API client for requesting the state of an ID token
       class Client
         # Global REST endpoint to use
-        ENDPOINT = "https://www.googleapis.com/oauth2/v3/tokeninfo?id_token=%s"
+        ENDPOINT = "https://www.googleapis.com/oauth2/" \
+                   "v3/tokeninfo?id_token=%s".freeze
 
         # ID token to verify
         attr_reader :id_token

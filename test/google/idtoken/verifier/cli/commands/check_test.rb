@@ -6,7 +6,7 @@ class CLICommandsCheckTest < Minitest::Test
 
   def test_calls_verify
     stub = proc do |token|
-      Google::Idtoken::Verifier::Result.new("token": token)
+      Google::Idtoken::Verifier::Result.new(token: token)
     end
     Google::Idtoken::Verifier.stub :verify, stub do
       run_command!

@@ -7,7 +7,7 @@ class VerifierTest < Minitest::Test
   end
 
   def test_verify_uses_api_client
-    stub = -> x { OpenStruct.new(call: { "sub" => x }) }
+    stub = -> (x) { OpenStruct.new(call: { "sub" => x }) }
     ::Google::Idtoken::Verifier::Client.stub :new, stub do
       result = ::Google::Idtoken::Verifier.verify("a_token")
       assert_instance_of ::Google::Idtoken::Verifier::Result, result
