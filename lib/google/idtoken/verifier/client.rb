@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "json"
 
 module Google
@@ -7,7 +9,7 @@ module Google
       class Client
         # Global REST endpoint to use
         ENDPOINT = "https://www.googleapis.com/oauth2/" \
-                   "v3/tokeninfo?id_token=%s".freeze
+                   "v3/tokeninfo?id_token=%s"
 
         # ID token to verify
         attr_reader :id_token

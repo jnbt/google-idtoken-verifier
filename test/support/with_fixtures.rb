@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module WithFixtures
   def fixture_path(*args)
     File.join(File.expand_path("../../fixtures", __FILE__), *args)

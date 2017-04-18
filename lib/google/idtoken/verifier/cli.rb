@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "google/idtoken/verifier/cli/app"
 require "google/idtoken/verifier/cli/out"
 require "google/idtoken/verifier/cli/commands"

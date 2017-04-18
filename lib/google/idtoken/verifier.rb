@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "google/idtoken/verifier/client"
 require "google/idtoken/verifier/error"
 require "google/idtoken/verifier/result"
